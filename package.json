@@ -1,0 +1,28 @@
+{
+	"name": "@tunnel/pkg",
+	"type": "module",
+	"root": true,
+	"version": "0.0.0",
+	"exports": "./src/$.ts",
+	"prettier": "@tunnel/prettier-config",
+	"bin": {
+		"pkg": "./src/bin/pkg.ts"
+	},
+	"scripts": {
+		"build": "tun ./src/bin/pkg.ts"
+	},
+	"dependencies": {
+		"consola": "^3.2.3",
+		"dot-prop": "^8.0.2",
+		"object-traversal": "^1.0.1",
+		"pathe": "^1.1.1",
+		"trim-extension": "^1.1.0",
+		"type-fest": "^4.5.0"
+	},
+	"devDependencies": {
+		"@tunnel/tun": "^0.1.2",
+		"@tunnel/prettier-config": "^0.0.0",
+		"@types/node": "^20.8.7",
+		"typescript": "^5.2.2"
+	}
+}
